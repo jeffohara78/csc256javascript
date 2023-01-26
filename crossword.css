@@ -1,0 +1,25 @@
+/* create the style for the webpage */
+table{
+    border: 1px solid black;
+    padding: 0px;
+}
+/* set the table data */
+td{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border: 1px solid black;
+    text-align: center;
+}
+/* set the letter data */
+.letter{
+    background-color: white;
+
+}
+/* set a new space in the stylesheet for the "hints" area on the webpage for the puzzle */
+.text{
+    color: black;
+    background-color: white;
+    width: 400px;
+    height: 20px;
+}

@@ -1,0 +1,1 @@
+This webpage, when run, will place black and white squares on the screen as a crossword puzzle. Hardcoded in for loops are the words for the puzzle. Below the puzzle are hints to the answers inside the puzzle.
