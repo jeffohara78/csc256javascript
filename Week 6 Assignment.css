@@ -1,0 +1,4 @@
+/* Add a background image to the page */
+  body {
+    background-image: url('Movie.jpg');
+  }

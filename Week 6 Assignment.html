@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Titles</title>
+    <link rel="stylesheet" href="Week 6 Assignment.css">
+    <!-- Change the color of the header -->
+    <style>
+        h1{
+            color: white;
+        }
+    </style>
+</head>
+
+<!-- This is where the list will appear -->
+<body>
+    <!-- Add a header to the page for the user to see what the program/page is about -->
+    <h1>Favorite Film Titles:</h1>
+
+    <!-- This is for the output from the user, the color has been changed too -->
+    <div id="test" style="color: white;"></div>
+
+    <script>
+        // create an array to hold the list of movies
+        var arrMovie = [];
+
+        // create a for loop to collect movie names from the user
+        for (var i=0; i<4; i++){
+            arrMovie.push(prompt("Hello!! Let's sort some of your favorite movie titles. Enter them here: ", ""));
+    
+        }
+
+        // function to sort the results entered by the user
+        arrMovie.sort();
+
+        // for loop to arrange the movies entered by the user
+        for(var i=0; i<arrMovie.length; i++){
+            document.getElementById("test").innerHTML += arrMovie[i] + "<BR>";
+        }
+
+        // function to clear the screen after data has been input and displayed
+        function clearList(){
+            document.getElementById("test").innerHTML = "";
+        }     
+    </script>
+
+    <!-- This is the reset button for the user to press to clear the screen -->
+    <input type="button" value="reset" onclick="clearList();">
+
+</body>
+</html>
