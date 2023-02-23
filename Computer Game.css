@@ -1,0 +1,13 @@
+/* Sytle for the body of the page */
+body{
+    background-repeat: no-repeat;
+    background-image: url("darkninja.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* style for the button on the page */
+button {
+    background-color: lightblue;
+}

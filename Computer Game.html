@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Game</title>
+    <link rel="stylesheet" href="Computer Game.css">
+    <script src="Computer Game.js"></script>
+</head>
+
+<body>
+    <!-- Create a Form for user input-->
+    <form>
+        <!-- Create a label for the user's first name -->
+        <label for="username">User Name:</label><br>
+        <!-- This is for the user input box on the page -->
+        <input type="text" id="username" name="uname" class="customClass"><br>
+        <!-- This is for user to enter weapon -->
+        <label for="weapons">Please enter your weapon of choice:</label><br>
+        <input type="text" id="weapons" name="weapons"><br>
+        <!-- This is for the user to enter name of land -->
+        <label for="landname">Enter the name of your kingdom:</label><br>
+        <input type="text" id="landname" name="landname"><br>
+        <!-- This is for the user to choose hero or villian -->
+        <label for="hero">Do you wish to be the hero of the game or the villain: </label><br>
+        <input type="text" id="hero" name="hero"><br>
+        <!-- This is the button the user will click after entering in their info -->
+        <button type="button" onclick="processForm();">Enter Game</button>
+    </form>
+<!-- This is the displayed output from what the user inputs -->
+    <div id="userInfo" style="display: none;">
+        <h2>Here is what you entered: </h2>
+        <br>
+        <label for="username">User Name: </label><div id="uname"></div>
+        <label for="weapons">Please enter your weapon of choice: </label><div id="theweapons"></div>
+        <label for="landname">Enter the name of your kingdom: </label><div id="thelandname"></div>
+        <label for="hero">Do you wish to be the hero of the game: </label><div id="thehero"></div>
+    </div>
+</body>
+</html>
