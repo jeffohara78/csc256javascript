@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <link rel="stylesheet" href="chess.css">
+
+    <style>
+        /* Configure the chessboard for the user,
+            when using a #, CSS will look for an HTML element with the specified ID */
+        #chessboard {
+            width: 400px;
+            height: 400px;
+        }
+
+        /* Configure the chess squares, the default background color is white */
+        .chess-square{
+            float: left;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Add an alert for the user when the webpage is launched describing what the page does -->
+    <script>
+        alert("Hello there...are you ready to play a game of chess? Click to enter the game but remember-stakes are high...");
+     </script>
+    <!-- The placeholder for the chessboard -->
+    <div id="chessboard"></div>
+
+    <script>
+        // chessboard is a pointer to the HTML div element called chessboard
+        var chessbarod = document.getElementById("chessboard");
+
+        // This loop creates each row, running 8 times
+        for (var i = 0; i<8; i++){
+            // This nested loop runs 8 time as well to create the columns
+            // This will give a chessboard that is 8x8 squares in dimension
+            for (var j = 0; j<8; j++){
+                // the chessSquare variable is a new element created each time the loop runs
+                var chessSquare = document.createElement('div');
+                // set the css classname for each square so they have the same style
+                chessSquare.className = "chess-square";
+                // if i+j divided by 2 having a remainder of 0, then change the background color of the square to black
+                // this will alternate the square color between white and black
+                if ((i+j) % 2 == 0){
+                    chessSquare.style.backgroundColor = "black";
+                }
+                // add this new div to the parent chessboard div
+                chessboard.appendChild(chessSquare);
+            }
+        }
+    </script>
+</body>
+</html>
