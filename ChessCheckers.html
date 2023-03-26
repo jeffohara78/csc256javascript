@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers</title>
+
+
+    <style>
+        /* Configure the chessboard for the user,
+            when using a #, CSS will look for an HTML element with the specified ID */
+        #checkers {
+            width: 416px;
+            height: 416px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        /* Configure the checker squares,  */
+        .square{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            
+        }
+        /* configure the background of the checkerboard */
+        .black{
+            background-color: darkgray;
+        }
+
+        /* this will create a round checker piece with a border */
+        .checker{
+            width: 45px;
+            height: 45px;
+            margin: 2.5px;
+            border-radius: 50%;
+            box-shadow: 4px 4px 4px gray;
+        }
+
+        /* make the piece white */
+        .checker-w{
+            background-color: ivory;
+        }
+
+        /* make the piece black */
+        .checker-b{
+            background-color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Add an alert for the user when the webpage is launched describing what the page does -->
+    <script>
+        alert("Hello there...are you ready to play a game of checkers? Click to enter the game but remember-stakes are high...");
+     </script>
+    <!-- this span will hold the value of the selected checker piece -->
+    <span id="selectedSquare" style="display: none;"></span>
+    <script src="ChessCheckers.js"></script>
+    
+    <script>
+        // create the checker board in JavaScript
+        createBoard();
+    </script>
+
+    
+</body>
+</html>
