@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Events</title>
+    <link rel="stylesheet" href="events.css">
+    <script src="events.js"></script>
+</head>
+<body>
+    <!--This is the title of the page-->
+    <h1> Having Fun with Events for Week 11: Tour Through Boston</h1>
+
+    <!--In this section, we will display an image that will change once you hover/click the mouse over the image.-->
+    <p>
+    <!-- Create a button for the user to click -->
+        <button id="btnNoClick" type="button" onclick="dontClick();" onmouseover="changeCursor();">DO NOT CLICK</button>
+    <!-- User instructions -->
+        Hover the mouse over the image below to see some historical landmarks!
+        <br>
+    <!-- Image of famous street in Boston when page is launched-->
+        <img id="img1" src="Acorn Street Smaller.jpg"  onmouseover="swapImage();" onclick="swapImage2();">
+        <br>
+    <!-- User instructions -->
+
+        Now, click on the image to continue touring Boston.
+        <br>
+        <!-- User instructions -->
+        Enter your name: <input type = "text" id ="txtName" onblur ="validateName();"></input>
+    </p>
+    
+</body>
+</html>

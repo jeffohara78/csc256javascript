@@ -1,0 +1,17 @@
+/* Change the attributes of the body color and font*/
+body{
+    background-color: black;
+    font-size: 18pt;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+/* Change the font size and color for the first header */
+h1{
+    font-size: 40pt;
+    color: red;
+
+}
+/* Change the font style for the webpage */
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
