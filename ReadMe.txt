@@ -1,6 +1,1 @@
-Hello!
-
-The purpose of this file is to show an example of a simple .html page, with .css and additional JavaScript file(s) to make the webpage enhanced.
-
-Example link():
-file:///C:/Users/Jeff/OneDrive/Desktop/Website%20Interfaces/W2%20External%20JavaScript/index.html
+This program is a very basic program that enables you (the user) to enter in any question you want and a magic 8-ball will randomly choose an answer for you, just like a real-life magic 8-ball!!

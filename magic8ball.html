@@ -1,0 +1,36 @@
+<html>
+	<!-- create a header/title for the project -->
+	<head>
+	  <title>MAGIC 8 BALL</title>
+
+	<!-- link relative files to the html file -->
+	  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<!-- setup the body of the page to represent the magic 8 ball -->
+	<body>
+		<div class="page">
+			<!-- header for the page displayed to the user -->
+			<header>
+				<h1>MAGIC&nbsp;<span>8</span>&nbsp;BALL</h1>
+			</header>
+			<!-- create space for user entry -->
+			<div class="ball">
+				<img id="8ball" src="magic8ballQuestion.png">
+				<p id="answer" class="answer">THIS IS WHERE THE ANSWER GOES</p>
+			</div>
+
+			<!-- create space for the answer to the user -->
+			<div class="button">
+				<button id="questionButton">ASK ME ANYTHING </button>
+			</div>
+
+			<!-- import from the js file -->
+		  <script type="text/javascript" src="magic8ball.js"></script>
+	  </div>
+	</body>
+</html>
